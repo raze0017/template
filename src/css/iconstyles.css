@@ -1,0 +1,42 @@
+.butt{
+    padding: 0;
+    border: none;
+    background: none;
+    }
+img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}    
+.svg-icon.search-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    &:focus,
+    &:hover {
+      .search-path {
+        stroke: #299ecc;
+      }
+    }
+  
+    /* On click: thicker black strokes  */
+    &:active {
+      .search-path {
+        stroke: #111516;
+        stroke-width: 2px;
+      }
+    }
+  }
+#searchField{
+    font-family: inherit;
+    outline: none;
+    border: none;
+    background: rgb(224, 220, 220);
+    color: #605c5c;
+    font-size: 0.9em;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 45px;
+    border-radius: 30px;
+    width: 50%;
+}

@@ -1,0 +1,93 @@
+body {
+    font-family: monospace;
+    font-size: 18px;
+    overflow-x: hidden;
+    color: var(--text);
+    font-weight: 500;
+    background: #fafafa;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainItems{
+    padding-top: 2%;
+
+}
+.card{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1, min(200px,30%)) repeat(1,min(300px,40%)) repeat(2,min(200px,15%));    
+}
+
+.basic{
+    background-color:auto;
+    display: flex;
+    padding: 10px;
+    height: 70px;
+    width: auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tempAndCond{
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto); /* Adjust based on the number of items */
+    }
+    .tempAndCond{
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+.temp{
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: rgb(86, 84, 84);
+}
+.cond{
+    font-size: 1.1em;
+
+}
+.medium-text {
+    font-size: 1.1em;
+}
+.light-text,.minText {
+    color: rgb(66, 62, 62);
+}
+.minimum,.maximum,.feelsLike{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    font-size: 25px;
+
+
+}
+.temptex{
+    font-weight: 700;
+    color: grey
+}
+.feels,.max{
+    margin-top: 10px;
+}
+.cond{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
